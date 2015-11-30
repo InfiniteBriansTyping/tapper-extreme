@@ -24,7 +24,6 @@ class ViewController: UIViewController {
     @IBOutlet weak var tapsLbl: UILabel!
     
     //Actions
-    
     @IBAction func onPlayBtnPressed(sender: UIButton!) {
         
         if howManyTapsTxt.text != nil && howManyTapsTxt.text != "" {
