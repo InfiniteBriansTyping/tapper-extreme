@@ -23,14 +23,7 @@ class ViewController: UIViewController {
     @IBOutlet weak var tapsBtn: UIButton!
     @IBOutlet weak var tapsLbl: UILabel!
     
-    @IBAction func onDiamondTap(sender: UIButton!) {
-        currentTaps++;
-        updateTapsLabel()
-        
-        if isGameOver() {
-            restartGame()
-        }
-    }
+    //Actions
     
     @IBAction func onPlayBtnPressed(sender: UIButton!) {
         
@@ -47,6 +40,15 @@ class ViewController: UIViewController {
             currentTaps = 0
             
             updateTapsLabel()
+        }
+    }
+    
+    @IBAction func onDiamondTap(sender: UIButton!) {
+        currentTaps++;
+        updateTapsLabel()
+        
+        if isGameOver() {
+            restartGame()
         }
     }
     
